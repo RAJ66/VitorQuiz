@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import db from '../db.json';
-import Widget from '../src/components/widget/index';
-import Footer from '../src/components/footer/index';
-import GitHubCorner from '../src/components/gitHubCorner/index';
-import QuizBackground from '../src/components/quizBackground/index';
+import Widget from '../src/components/Widget/index';
+import Footer from '../src/components/Footer/index';
+import GitHubCorner from '../src/components/GitHubCorner/index';
+import QuizBackground from '../src/components/QuizBackground/index';
 
 const Title = styled.h1`
   font-size: 50px;
