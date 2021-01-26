@@ -1,21 +1,9 @@
-import styled from "styled-components";
-import db from "../db.json";
-import Widget from "../src/components/Widget/index";
-import Footer from "../src/components/Footer/index";
-import GitHubCorner from "../src/components/GitHubCorner/index";
-import QuizBackground from "../src/components/QuizBackground/index";
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.secondary};
-`;
-
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`;
+import styled from 'styled-components';
+import db from '../db.json';
+import Widget from '../src/components/Widget/index';
+import Footer from '../src/components/Footer/index';
+import GitHubCorner from '../src/components/GitHubCorner/index';
+import QuizBackground from '../src/components/QuizBackground/index';
 
 export const QuizContainer = styled.div`
   width: 100%;
