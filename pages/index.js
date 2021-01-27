@@ -6,6 +6,11 @@ import Widget from '../src/components/Widget/index';
 import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
+const test = process.env.PROJECTID;
+console.log("*********")
+console.log(test)
+console.log("*********")
+
 
 export const QuizContainer = styled.div`
   width: 100%;
