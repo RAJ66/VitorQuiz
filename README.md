@@ -15,3 +15,33 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
+
+## 💻Stack
+
+- [React](https://reactjs.org)
+- [Next JS](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+
+## To set up
+
+```
+$ yarn install
+```
+
+or
+
+```
+$ npm install
+```
+
+### Run
+
+```
+$ yarn run dev
+```
+
+or
+
+```
+$ npm run dev
+```
