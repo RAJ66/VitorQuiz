@@ -6,9 +6,11 @@ import Widget from '../src/components/Widget/index';
 import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
+import fire from "../fire-config"
 const test = process.env.PROJECTID;
 console.log("*********")
 console.log(test)
+console.log(fire)
 console.log("*********")
 
 
