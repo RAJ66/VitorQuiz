@@ -48,3 +48,8 @@ $ npm run dev
 
 
 **[FIGMA](https://www.figma.com/file/rh7zm3wAz3SomVwby1iQYV/AluraFlix)**.
+<h3>Connect with me<h3/>
+<a href="https://www.linkedin.com/in/vitorbarbosa66/">
+  <img alt="Vitor Barbosa" src="https://img.shields.io/badge/-Vitor%20Barbosa-blue?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  <div/>
