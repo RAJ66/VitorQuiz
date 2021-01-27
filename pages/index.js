@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import db from '../db.json';
@@ -7,11 +7,6 @@ import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import fire from "../fire-config"
-const test = process.env.PROJECTID;
-console.log("*********")
-console.log(test)
-console.log(fire)
-console.log("*********")
 
 
 export const QuizContainer = styled.div`
@@ -28,6 +23,21 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
+
+  useEffect(() => {
+    console.log("test")
+    fire.firestore()
+      .collection('db')
+      .onSnapshot(snap => {
+        const data = snap.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        console.log("****************")
+        console.log(data)
+        console.log("****************")
+      });
+  }, []);
 
   return (
     <QuizBackground backgroundImage={db.bg}>
