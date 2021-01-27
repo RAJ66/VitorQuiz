@@ -1,10 +1,10 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png",
+    "title": "Vitor Quiz",
+    "description": "Test your knowledge of JS.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://media.giphy.com/media/3o7qDPxorBbvpB1Pby/source.gif",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer:",
         "answer": 2,
