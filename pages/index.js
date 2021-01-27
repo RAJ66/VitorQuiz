@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import db from '../db.json';
 import Widget from '../src/components/Widget/index';
 import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
@@ -23,9 +22,9 @@ export const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
+  const [db, setDb] = useState('');
 
   useEffect(() => {
-    console.log("test")
     fire.firestore()
       .collection('db')
       .onSnapshot(snap => {
@@ -33,10 +32,9 @@ export default function Home() {
           id: doc.id,
           ...doc.data()
         }));
-        console.log("****************")
-        console.log(data)
-        console.log("****************")
+        setDb(JSON.parse(data[0].name))
       });
+
   }, []);
 
   return (
