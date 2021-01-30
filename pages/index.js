@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -10,8 +9,8 @@ import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import Input from '../src/components/Input/index';
 import Button from '../src/components/Button/index';
-import QuizContainer from "../src/components/QuizContainer/index"
-
+import QuizContainer from '../src/components/QuizContainer/index';
+import QuizLogo from '../src/components/QuizLogo/index';
 
 export default function Home() {
   const router = useRouter();
@@ -23,6 +22,7 @@ export default function Home() {
         <title>Alura Quiz</title>
       </Head>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>The legend of zelda</h1>
@@ -58,7 +58,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/TiagoR15" />
+      <GitHubCorner projectUrl="https://github.com/RAJ66" />
     </QuizBackground>
   );
 }
