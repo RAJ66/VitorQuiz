@@ -7,16 +7,13 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 import AlternativesForm from '../src/components/AlternativesForm';
+import Loading from '../src/components/Loading';
 
 const LoadingWidget = () => (
   <Widget>
     <Widget.Header>
-      Loading...
+      <Loading />
     </Widget.Header>
-
-    <Widget.Content>
-      [Loading ]
-    </Widget.Content>
   </Widget>
 );
 const ResultWidget = ({ results }) => (
