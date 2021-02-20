@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Loading from '../src/components/Loading';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import Button from '../../components/Button';
+import AlternativesForm from '../../components/AlternativesForm';
+import Loading from '../../components/Loading';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
 const LoadingWidget = () => (
   <Widget>
@@ -19,6 +19,7 @@ const LoadingWidget = () => (
 const ResultWidget = ({ results }) => (
   <Widget>
     <Widget.Header>
+      <BackLinkArrow href="/" />
       Result Screen
     </Widget.Header>
 
@@ -61,7 +62,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Question ${questionIndex + 1} of ${totalQuestions}`}
         </h3>
@@ -137,7 +138,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizPage({ db }) {
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const totalQuestions = db.questions.length;
